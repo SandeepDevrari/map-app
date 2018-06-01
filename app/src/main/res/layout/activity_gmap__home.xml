@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/earth"
+    android:visibility="visible"
+    tools:context="com.example.angry.googlemap.GMap_Home">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/earth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/earth"
+        app:srcCompat="@drawable/earth" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="visible"
+        android:weightSum="1"
+        tools:background="@android:color/transparent"
+        tools:ignore="MissingConstraints,UselessParent"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="104dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <RadioButton
+            android:id="@+id/radioButton0"
+            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_mylocation"
+            android:button="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/ic_input_add"
+            android:button="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:background="@android:drawable/ic_menu_myplaces"
+            android:button="@android:color/darker_gray"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            tools:ignore="HardcodedText" />
+
+    </RadioGroup>
+
+</RelativeLayout>

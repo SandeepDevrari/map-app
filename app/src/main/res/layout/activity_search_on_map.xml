@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.angry.googlemap.SearchOnMap"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/storetofav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginTop="101dp"
+        android:visibility="visible"
+        map:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:id="@+id/maptype"
+        style="@style/Platform.Widget.AppCompat.Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:visibility="visible"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
